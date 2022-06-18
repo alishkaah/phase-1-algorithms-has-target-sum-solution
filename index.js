@@ -1,13 +1,30 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+
+  for(let i = 0; i< array.length; i++) {
+    for(let j = i+1;  j < array.length; j++) {
+      if(target == array[i] + array[j]) return true
+    }
+  }
+ return false
 }
 
 /* 
   Write the Big O time complexity of your function here
+  0(n²)
 */
 
 /* 
   Add your pseudocode here
+
+  Add your pseudocode here
+
+   hasTargetSum Func takes an array and a target
+    loop through the array 
+      sum individual int
+      if sum equals target
+        return true
+    else we return false
 */
 
 /*
